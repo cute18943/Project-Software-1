@@ -26,12 +26,11 @@ int rd() {
 		}else
 		{
 			break;
-		}
-		
+		}	
 	}
 	cout<<"範圍為1-1000"<<endl; 
 	srand(time(NULL));
-    c=(rand()%1000)+1;
+    c=(rand()%b)+1;
     cout<<"開始輸入號碼："<<endl;
 	while(cin>>d){	
 	
