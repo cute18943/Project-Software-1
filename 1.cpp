@@ -28,7 +28,7 @@ int rd() {
 			break;
 		}	
 	}
-	cout<<"範圍為1-1000"<<endl; 
+	cout<<"範圍為1-"<<b<<endl; 
 	srand(time(NULL));
     c=(rand()%b)+1;
     cout<<"開始輸入號碼："<<endl;
