@@ -8,6 +8,27 @@ int rd() {
     
     int a=0,b=0,c,d,e; 
 	
+	cout<<"請輸入1"<<endl;
+	while(cin>>a){
+		if(a!=1){
+			cout<<"請重新輸入"<<endl;
+		}else
+		{
+			break;
+		}
+		
+	}	
+	cout<<"請輸入1000"<<endl;
+	while(cin>>b){
+		
+		if(b!=1000){
+			cout<<"請重新輸入"<<endl;
+		}else
+		{
+			break;
+		}
+		
+	}
 	cout<<"範圍為1-1000"<<endl; 
 	srand(time(NULL));
     c=(rand()%1000)+1;
