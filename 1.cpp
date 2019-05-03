@@ -8,7 +8,7 @@ int rd() {
     
     int a=0,b=0,c,d,e; 
 	
-	cout<<"請輸入1"<<endl;
+	cout<<"請輸入起始值為1："<<endl;
 	while(cin>>a){
 		if(a!=1){
 			cout<<"請重新輸入"<<endl;
@@ -18,10 +18,10 @@ int rd() {
 		}
 		
 	}	
-	cout<<"請輸入1000"<<endl;
+	cout<<"請輸入終止值："<<endl;
 	while(cin>>b){
 		
-		if(b!=1000){
+		if(b>=a){
 			cout<<"請重新輸入"<<endl;
 		}else
 		{
@@ -75,7 +75,14 @@ int main() {
 	cout<<"請輸入終止範圍："<<endl;
 	cin>>b;
 	cout<<"請輸入選定號碼："<<endl;
-	cin>>c;
+	while(cin>>c){
+		if(c<=a || c>=b){
+			cout<<"請重新輸入"<<endl;
+		}else
+		{
+			break;
+		}	
+	}	
 	while(cin>>d){	
 	
 		if(d<c){	
