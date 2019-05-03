@@ -21,7 +21,7 @@ int rd() {
 	cout<<"請輸入終止值："<<endl;
 	while(cin>>b){
 		
-		if(b>=a){
+		if(b<=a){
 			cout<<"請重新輸入"<<endl;
 		}else
 		{
